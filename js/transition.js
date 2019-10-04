@@ -57,7 +57,7 @@ $(document).ready(function(){
          },500);
        });
           
-        if (window.location.pathname == "/3.html" ) {
+        if (top.location.pathname == "/3.html" ) {
 			$(".img3").removeClass("lower3");
             $(window).click(function(){
                 var x = event.clientX;
@@ -92,7 +92,7 @@ $(document).ready(function(){
             },1100);
           });
 	
-    	if (window.location.pathname == "/4.html" ) {
+    	if (top.location.pathname == "/4.html" ) {
 			$("svg, p").removeClass("hidden");
 		} 	
 	
@@ -106,7 +106,7 @@ $(document).ready(function(){
             },1100);
        });
 	
-	if (window.location.pathname == "/5.html") {
+	if (top.location.pathname == "/5.html") {
 		$("svg").removeClass("hidden").addClass("noaction darkline");
 		$("body").removeClass("dark");
 		$("smile").mouseover(function(){
@@ -128,7 +128,7 @@ $(document).ready(function(){
          },400);
      });
 	
-	if (window.location.pathname == "/6.html") {
+	if (top.location.pathname == "/6.html") {
 		$("p").removeClass("hidden");
         $(".img6").removeClass("hidden lower6");
 		setTimeout(function() {
@@ -153,7 +153,7 @@ $(document).ready(function(){
 	
 	///////////////////////////////////////////////////////// SAD PAGE
 	
-	if (window.location.pathname == "/s1.html") {
+	if (top.location.pathname == "/s1.html") {
 		$(".content").removeClass("hidden");
 		setTimeout(function() {
 			$("p").removeClass("down");
