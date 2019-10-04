@@ -25,12 +25,7 @@ $(document).ready(function(){
 	
     // from page 1 to page 2
 	
-	var page1 = true;
-	var page2 = false;
-	var page3 = false;
-	var page4 = false;
-	var page5 = false;
-	var page6 = false;
+	
     
     $("#click1").click(function(){ 
 		$("p").addClass("hidden slide");
