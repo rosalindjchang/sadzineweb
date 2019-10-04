@@ -17,7 +17,7 @@ $(document).ready(function(){
 	
 	// page 1 load
 	
-	if (window.location.pathname == "/index.html" ) {
+	if (window.location.pathname == window.location.host + "/index.html" ) {
 		$(".content").removeClass("hidden");
       } 
 	
