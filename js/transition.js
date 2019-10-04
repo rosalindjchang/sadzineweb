@@ -17,13 +17,20 @@ $(document).ready(function(){
 	
 	// page 1 load
 	
-	if (window.location.pathname == window.location.host + "/index.html" ) {
+
+	$(window).on('load', function () {
 		$(".content").removeClass("hidden");
-      } 
+	});
+	
 	
     // from page 1 to page 2
 	
-	
+	var page1 = true;
+	var page2 = false;
+	var page3 = false;
+	var page4 = false;
+	var page5 = false;
+	var page6 = false;
     
     $("#click1").click(function(){ 
 		$("p").addClass("hidden slide");
@@ -35,7 +42,6 @@ $(document).ready(function(){
 	
 	
 	if (window.location.pathname == "/2.html" ) {
-		$(".img2, p").removeClass("hidden");
 		$(".img2").removeClass("slide2");
         $("happy").mouseover(function(){
             $(".img2").addClass("openeyes");
@@ -57,7 +63,6 @@ $(document).ready(function(){
        });
           
         if (window.location.pathname == "/3.html" ) {
-			$(".img3, p").removeClass("hidden");
 			$(".img3").removeClass("lower3");
             $(window).click(function(){
                 var x = event.clientX;
