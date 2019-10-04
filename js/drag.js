@@ -2,7 +2,7 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
-
+var counter = 0;
 $(document).ready(function(){
 
 var ea = document.getElementById("eat");
@@ -54,9 +54,7 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 	
-	
-	
-	
+
 
 }
 
