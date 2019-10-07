@@ -422,7 +422,7 @@ text2 {
 }
 
 .squig {
-	background-image: url(/img/s_face-squig.gif);
+	background-image: url(img/s_face-squig.gif);
 	background-size: contain;
 	position: absolute;
 	background-repeat: no-repeat;
@@ -574,7 +574,7 @@ smalll:hover {
 
 
 .spinnytext3 {
-	background-image: url(/img/s_texttext-39.png);
+	background-image: url(img/s_texttext-39.png);
 	background-size:contain;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -721,7 +721,7 @@ li {
 }
 
 .yellow {
-	background-image: url(/img/s_face_face-32.png);
+	background-image: url(img/s_face_face-32.png);
 	transition: 0s;
 }
 
