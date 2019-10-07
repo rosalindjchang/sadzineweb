@@ -9,7 +9,7 @@ $(document).ready(function(){
 	 $("happypg").click(function(){ 
 		$(".content").addClass("hidden");
         setTimeout(function() {
-           window.location = "index.html";
+           window.location = "1.html";
          },1000);
      });
         
@@ -17,7 +17,7 @@ $(document).ready(function(){
 	
 	// page 1 load
 	
-	if (window.location.pathname == "/sadzineweb/index.html") {
+	if (window.location.pathname == "/sadzineweb/1.html" || "/sadzineweb") {
 		$(".content").removeClass("hidden");
       } 
 	

@@ -28,7 +28,7 @@ $(document).ready(function(){
 		$(".content").addClass("hidden");
 		 $(".menu").addClass("menuin noaction");
         setTimeout(function() {
-           window.location = "index.html";
+           window.location = "1.html";
 			$(".menu").removeClass("noaction");
          },1000);
      });
