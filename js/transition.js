@@ -17,7 +17,7 @@ $(document).ready(function(){
 	
 	// page 1 load
 	
-	if (window.location.pathname == "/sadzineweb/1.html" || "/sadzineweb") {
+	if (window.location.pathname == "/sadzineweb/1.html") || (window.location.pathname == "/sadzineweb"){
 		$(".content").removeClass("hidden");
       } 
 	
