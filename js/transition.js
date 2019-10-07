@@ -107,7 +107,8 @@ $(document).ready(function(){
        });
 	
 	if (window.location.pathname == "/sadzineweb/5.html") {
-		$("svg").removeClass("hidden").addClass("noaction darkline");
+		$("svg").addClass("noaction darkline");
+		$(".content").removeClass("hidden");
 		$("body").removeClass("dark");
 		$("smile").mouseover(function(){
             $(".img5").addClass("smile2");
