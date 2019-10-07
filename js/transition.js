@@ -17,7 +17,7 @@ $(document).ready(function(){
 	
 	// page 1 load
 	
-	if (window.location.pathname == "/index.html") {
+	if (window.location.pathname == "/sadzineweb/index.html") {
 		$(".content").removeClass("hidden");
       } 
 	
@@ -34,7 +34,7 @@ $(document).ready(function(){
      });
 	
 	
-	if (window.location.pathname == "/2.html" ) {
+	if (window.location.pathname == "/sadzineweb/2.html" ) {
 		$(".img2, p").removeClass("hidden");
 		$(".img2").removeClass("slide2");
         $("happy").mouseover(function(){
