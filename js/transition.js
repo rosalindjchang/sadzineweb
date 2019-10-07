@@ -153,7 +153,7 @@ $(document).ready(function(){
 	
 	///////////////////////////////////////////////////////// SAD PAGE
 	
-	if (window.location.pathname == "/s1.html") {
+	if (window.location.pathname == "/sadzineweb/s1.html") {
 		$(".content").removeClass("hidden");
 		setTimeout(function() {
 			$("p").removeClass("down");
