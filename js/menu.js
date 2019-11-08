@@ -53,6 +53,24 @@ $(document).ready(function(){
          },1000);
      });
 	
+	 $("home").click(function(){ 
+		$(".content").addClass("hidden");
+		 $(".menu").addClass("menuin noaction hidden");
+        setTimeout(function() {
+           window.location = "index.html";
+			$(".menu").removeClass("noaction");
+         },1000);
+     });
+	
+	 $("filmpg").click(function(){ 
+		$(".content").addClass("hidden");
+		 $(".menu").addClass("menuin noaction");
+        setTimeout(function() {
+           window.location = "f1.html";
+			$(".menu").removeClass("noaction");
+         },1000);
+     });
+	
 	
 	
 });

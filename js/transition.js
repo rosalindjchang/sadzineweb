@@ -4,20 +4,123 @@
 
 $(document).ready(function(){
     
-	//menu
+	// preload images
 	
-	 $("happypg").click(function(){ 
-		$(".content").addClass("hidden");
-        setTimeout(function() {
-           window.location = "1.html";
-         },1000);
-     });
-        
+	function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+	}	
+
+		preload([
+			'img/1_drown.png',
+			'img/1_nodrown.png',
+			'img/2_face.png',
+			'img/2_face2.png',
+			'img/3_happy.png',
+			'img/3_sad.png',
+			'img/4_img.png',
+			'img/4_img2.png',
+			'img/5_simle2.png',
+			'img/5_smile.png',
+			'img/comic-49.png',
+			'img/comic-50.png',
+			'img/comic-52.png',
+			'img/comic-53.png',
+			'img/comic-56.png',
+			'img/comic-57.png',
+			'img/comic-58.png',
+			'img/comic-59.png',
+			'img/comic-62.png',
+			'img/cursor-15.png',
+			'img/cursor-16.png',
+			'img/night-51.png',
+			'img/night-62.png',
+			'img/night-64.png',
+			'img/nightt-61.png',
+			'img/zine-55.png',
+			'img/s_face.png',
+			'img/s_face-32.png',
+			'img/s_face_w-40.png',
+			'img/s_face_yellow.png',
+			'img/s_face-nomouth.png',
+			'img/s_face-squig.gif'
+		]);
+
 	
+	// index
+	
+	if (window.location.pathname == "/sadzineweb/index.html") {
+		$(".content").removeClass("hidden");
+      } 
+	
+	 $(".hometype").mouseover(function(){
+            $("not").removeClass("byetext");
+    });
+    $(".hometype").mouseout(function(){
+            $("not").addClass("byetext");
+    });
+	
+	
+	// film
+	
+	if (window.location.pathname == "/sadzineweb/f1.html") {
+		$(".content").removeClass("hidden");
+		
+      } 
+	
+	$(".filmtext").click(function(){
+		$(".filmtext").addClass("byetext");
+		$(".windowf").addClass("clickw");
+	});
+	
+	var counter = 0;
+	
+	 $(document).on('click', '.clickw', function(){
+        counter++;
+		if (counter == 1){
+			$(".windowf").addClass("sun1");
+		} else if (counter == 2) {
+			$(".windowf").removeClass("sun1").addClass("sun2");
+		}  else if (counter == 3) {
+			$(".windowf").removeClass("sun2").addClass("sun3");
+		}  else if (counter == 4) {
+			$(".windowf").removeClass("sun3");
+		}  else if (counter == 5) {
+			$(".windowf").addClass("dude1");
+		} else if (counter == 6) {
+			$(".windowf").removeClass("dude1").addClass("dude2");
+		} else if (counter == 7) {
+			$(".windowf").removeClass("dude2").addClass("dude3");
+		} else if (counter == 8) {
+			$(".windowf").removeClass("dude3").addClass("dude2");
+		} else if (counter == 9) {
+			$(".windowf").removeClass("dude2").addClass("dude4");
+		} else if (counter == 10) {
+			$(".windowf").removeClass("dude4");
+		} else if (counter == 11) {
+			$(".windowf").addClass("night");
+			$("body").addClass("dark");
+			$(".depdude").addClass("depdudenight");
+		} else if (counter == 12) {
+			$(".windowf").addClass("night1");
+		} else if (counter == 13) {
+			$(".windowf").removeClass("night1").addClass("night2");
+		} else if (counter == 14) {
+			$(".windowf").removeClass("night2").addClass("night3");
+		} else if (counter == 15) {
+			$(".windowf").removeClass("night3");
+		} else if (counter == 16) {
+			$(".windowf").removeClass("night");
+			$("body").removeClass("dark");
+			$(".depdude").removeClass("depdudenight");
+			counter = 0;
+		}
+	 });
 	
 	// page 1 load
 	
-	if ((window.location.pathname == "/sadzineweb/1.html") || (window.location.pathname == "/sadzineweb")){
+	if (window.location.pathname == "/sadzineweb/1.html") {
 		$(".content").removeClass("hidden");
       } 
 	
@@ -45,6 +148,14 @@ $(document).ready(function(){
         });
       } 
     
+	
+	$("happy").mouseover(function(){
+         $(".img1").addClass("img11");
+     });
+   	$("happy").mouseout(function(){
+         $(".img1").removeClass("img11");
+    });
+	
     
     // from page 2 to 3
         
@@ -73,12 +184,12 @@ $(document).ready(function(){
         
         $("someone").mouseover(function(){
             $(".img3").addClass("sad3");
-            $("noone").addClass("lighttext");
+            $("noone").addClass("cut");
             $(".textsomeone2").addClass("blacktext");
         });
         $("someone").mouseout(function(){
             $(".img3").removeClass("sad3");
-            $("noone").removeClass("lighttext");
+            $("noone").removeClass("cut");
             $(".textsomeone2").removeClass("blacktext");
         });
     
@@ -107,7 +218,7 @@ $(document).ready(function(){
        });
 	
 	if (window.location.pathname == "/sadzineweb/5.html") {
-		$("svg").addClass("noaction darkline");
+		$("svg").removeClass("hidden").addClass("noaction darkline");
 		$(".content").removeClass("hidden");
 		$("body").removeClass("dark");
 		$("smile").mouseover(function(){
@@ -144,13 +255,6 @@ $(document).ready(function(){
         });
 	}
 	
-	$(".imghover6").click(function(){
-		$("p").addClass("hidden");
-        $(".img6").addClass("hidden");
-		setTimeout(function() {
-			window.location = "s1.html";
-        },1000);
-	});
 	
 	///////////////////////////////////////////////////////// SAD PAGE
 	
