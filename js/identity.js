@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 	
 	
-	if (window.location.pathname == "sadzineweb/m1.html") {
+	if (window.location.pathname == "/sadzineweb/m1.html") {
 		$(".content").removeClass("hidden");
 		setTimeout(function() {
           	$(".do, .happened, .done").removeClass("lefthid");
