@@ -1424,3 +1424,7 @@ depressed:hover {
 	left:45vw;
 	background-image: url(img/end-62.png);
 }
+
+.comicc {
+	cursor: url("img/cursorcomic-65.png") 12 12, default;
+}
