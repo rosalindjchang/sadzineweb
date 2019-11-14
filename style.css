@@ -9,6 +9,8 @@
    
 }
 
+
+
 .content {
 	width:100%;
 	height:100%;
@@ -1306,6 +1308,15 @@ depressed:hover {
 .filmtext:hover {
 	cursor: pointer;
 	text-decoration:line-through;
+	cursor: url("img/cursorcomic-64.png") 12 12, default;
+}
+
+.clickw {
+	cursor: url("img/cursorcomic-64.png") 12 12, default;
+}
+
+.comicc {
+	cursor: url("img/cursorcomic-65.png") 12 12, default;
 }
 
 .windowf {
@@ -1319,6 +1330,7 @@ depressed:hover {
     height: 135px;
 	left:60vw;
 	top:16vh;
+
 }
 
 
@@ -1388,9 +1400,6 @@ depressed:hover {
 	background-image: url(img/comic-50.png);
 }
 
-.clickw:hover {
-	cursor: pointer;
-}
 
 .endimg {
 	border: black solid 2px;
@@ -1425,6 +1434,4 @@ depressed:hover {
 	background-image: url(img/end-62.png);
 }
 
-.comicc {
-	cursor: url("img/cursorcomic-65.png") 12 12, default;
-}
+
