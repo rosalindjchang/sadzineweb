@@ -280,5 +280,29 @@ $(document).ready(function(){
 		$(".st2").removeClass("none");
 	})
 	
+	//////////////////////////////////////////////////////////// END PAGE
+	
+	if (window.location.pathname == "/sadzineweb/e1.html") {
+		$(".content").removeClass("hidden");
+      } 
+	
+	$("numb").click(function(){
+		$(".endimg").addClass("endimg2");
+		$(".endtext1").addClass("none");
+		$(".endtext2").removeClass("none");
+	})
+	
+	$("lonely").click(function(){
+		$(".endimg").addClass("endimg3").removeClass("endimg2");
+		$(".endtext2").addClass("none");
+		$(".endtext3").removeClass("none");
+	})
+	
+	$("people").click(function(){
+		$(".endimg").addClass("endimg4").removeClass("endimg3");
+		$(".endtext3").addClass("none");
+		$(".endtext4").removeClass("none");
+	})
+	
 
 });

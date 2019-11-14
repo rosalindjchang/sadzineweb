@@ -133,6 +133,11 @@
 		width:100px;
 		line-height: 14pt;
 	}
+	
+	.endimg {
+		top:30vh !important;
+		left: 10vw !important;
+	}
 
 }
 
@@ -404,7 +409,7 @@ smile:hover {
 
 .img5:hover {
 	background-image: url(img/5_simle2.png);
-	cursor: url("img/cursor-16.png") 12 12, default;
+	cursor: url("/img/cursor-16.png") 12 12, default;
 }
 
 .smile2 {
@@ -543,7 +548,7 @@ text2 {
 }
 
 .squig {
-	background-image: url(img/s_face-squig.gif);
+	background-image: url(/img/s_face-squig.gif);
 	background-size: contain;
 	position: absolute;
 	background-repeat: no-repeat;
@@ -695,7 +700,7 @@ smalll:hover {
 
 
 .spinnytext3 {
-	background-image: url(img/s_texttext-39.png);
+	background-image: url(/img/s_texttext-39.png);
 	background-size:contain;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -842,7 +847,7 @@ li {
 }
 
 .yellow {
-	background-image: url(img/s_face_face-32.png);
+	background-image: url(/img/s_face_face-32.png);
 	transition: 0s;
 }
 
@@ -894,6 +899,8 @@ depressed:hover {
 	left:10vw;
 	top:100px;
 }
+
+
 
 .box {
 	border: black solid 2px;
@@ -1383,4 +1390,37 @@ depressed:hover {
 
 .clickw:hover {
 	cursor: pointer;
+}
+
+.endimg {
+	border: black solid 2px;
+	position: absolute;
+	left: 60vw;
+	top:20vh;
+	width:30vh;
+	height:58.2vh;
+	background-image: url(img/end-63.png);
+    background-size:cover;
+	background-position: 62% 50%;
+	transition: 1s;
+}
+.endimg2{
+	background-image: url(img/end-60.png);
+}
+
+.endhover:hover {
+	background: black;
+	cursor: pointer;
+}
+
+.endimg3 {
+	width:85vh;
+	left:45vw;
+	background-image: url(img/end-61.png);
+}
+
+.endimg4 {
+	width:85vh;
+	left:45vw;
+	background-image: url(img/end-62.png);
 }
