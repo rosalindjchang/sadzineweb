@@ -71,6 +71,15 @@ $(document).ready(function(){
          },1000);
      });
 	
+	 $("endpg").click(function(){ 
+		$(".content").addClass("hidden");
+		 $(".menu").addClass("menuin noaction");
+        setTimeout(function() {
+           window.location = "e1.html";
+			$(".menu").removeClass("noaction");
+         },1000);
+     });
+	
 	
 	
 });
