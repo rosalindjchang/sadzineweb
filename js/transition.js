@@ -44,7 +44,11 @@ $(document).ready(function(){
 			'img/s_face_w-40.png',
 			'img/s_face_yellow.png',
 			'img/s_face-nomouth.png',
-			'img/s_face-squig.gif'
+			'img/s_face-squig.gif',
+			'img/end-60.png',
+			'img/end-61.png',
+			'img/end-62.png',
+			'img/end-63.png'
 		]);
 
 	
