@@ -40,7 +40,7 @@ $(document).ready(function(){
 			'img/nightt-61.png',
 			'img/zine-55.png',
 			'img/s_face.png',
-			'img/s_face-32.png',
+			'img/s_face_face-32',
 			'img/s_face_w-40.png',
 			'img/s_face_yellow.png',
 			'img/s_face-nomouth.png',
