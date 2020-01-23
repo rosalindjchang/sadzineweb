@@ -10,6 +10,27 @@
 }
 
 
+.zineindex {
+	color:white;
+	opacity: 0.65;
+	font-family: Montserrat, sans-serif;
+	background-image: url("svg/X.png");
+	background-size: contain;
+	font-size: 15pt;
+	width:20px;
+	height: 20px;
+	position: fixed;
+	right:0;
+	margin: 20px;
+	z-index: 1;
+}
+
+.zineindex:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+
 
 .content {
 	width:100%;

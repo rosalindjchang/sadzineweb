@@ -44,6 +44,11 @@ $(document).ready(function(){
 	//////////////////////////////////
     
 	
+	//back to index
+	
+	$(".zineindex").click(function(){
+		window.location = 'https://rosalindjchang.github.io/zine-index/';
+	});
 	
 	
 	
